@@ -12,7 +12,7 @@ class Owner
      "I am a #{@species}."
   end
   def buy_fish(fish)
-    @pets[:fishes] << fish
+    @pets[:fishes] << Fish.new(fish)
   end
   def self.all
     @@all
