@@ -41,6 +41,7 @@ class Owner
         animal.mood = "nervous"
       end
     end
+    @pets.clear
   end
   def self.all
     @@all
