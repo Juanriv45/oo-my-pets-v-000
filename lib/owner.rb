@@ -35,6 +35,11 @@ class Owner
       fish.mood = "happy"
     end
   end
+  def sell_pets
+    @pets.each do |type, pet|
+      type.pet.mood = "nervous"
+    end
+  end
   def self.all
     @@all
   end
